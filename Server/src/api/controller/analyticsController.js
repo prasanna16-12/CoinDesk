@@ -28,7 +28,7 @@ module.exports = {
             let USD = data.bpi.USD.rate_float
             let GBP = data.bpi.GBP.rate_float
             let EUR = data.bpi.EUR.rate_float
-            //console.log(updatedOn, USD, GBP, EUR);
+            console.log(updatedOn, USD, GBP, EUR);
             await modelAnalytics.addBitcoinRates(updatedOn, USD, GBP, EUR)
 
         } catch (error) {
