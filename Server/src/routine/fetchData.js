@@ -16,6 +16,7 @@ function fetchData() {
                 console.log(error);
             })
     }, 
+        // automatically rerun after 10 mins
         1000 * 5 * 60
     )
 }
