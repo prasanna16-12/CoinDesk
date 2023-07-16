@@ -4,5 +4,7 @@ CREATE TABLE `coin_desk_data` (
   `USD` double NOT NULL,
   `GBP` double NOT NULL,
   `EUR` double NOT NULL,
+  `cheapest_to_buy` varchar(45) DEFAULT NULL,
+  `expensive_to_buy` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-);
+)

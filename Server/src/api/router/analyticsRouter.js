@@ -1,7 +1,6 @@
 const express = require('express')
 const routerAnalytics = express.Router()
 
-// controller
 
 // contoller
 const controllerAnalytics = require('../controller/analyticsController')

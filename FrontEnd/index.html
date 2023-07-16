@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinDesk</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="input-box">
+            <div>
+                <span>From</span>
+                <input type="datetime-local" id="fromDateTimeInput" required name="from">
+            </div>
+           <div>
+                <span>To</span>
+                <input type="datetime-local" id="toDateTimeInput" required name="to">
+           </div>
+    </div>
+
+    <div class="chart">
+    <button class="filter-btn" id="RESET_BTN">RESET</button>
+    <canvas id="myChart"></canvas>
+    </div>
+
+    <div class="filters">
+        <div class="info-card" style="background-color: rgba(230,75,48, 0.3);">
+            <h1>United States Dollar</h1>
+            <h2>MAX</h2>
+            <h3 id="USD-MAX">
+                Fetching Data...
+            </h3>
+            <h2>MIN</h2>
+            <h3 id="USD-MIN">
+                Fetching Data...
+            </h3>
+            <button class="filter-btn" id="USD_BTN" style="background-color: rgba(230,75,48, 0.5);">USD ($)</button>
+        </div>
+       <div class="info-card" style="background-color: rgba(51,111,178, 0.3);">
+            <h1>British Pound Sterling</h1>
+            <h2>MAX</h2>
+            <h3 id="GBP-MAX">
+                Fetching Data...
+            </h3>
+            <h2>MIN</h2>
+            <h3 id="GBP-MIN">
+                Fetching Data...
+            </h3>
+            <button class="filter-btn" id="GBP_BTN" style="background-color: rgba(51,111,178, 0.5);">GBP (£)</button>
+       </div>
+        
+        <div class="info-card" style="background-color: rgba(240,166,22, 0.3);">
+            <h1>Euro</h1>
+            <h2>MAX</h2>
+            <h3 id="EUR-MAX">
+                Fetching Data...
+            </h3>
+            <h2>MIN</h2>
+            <h3 id="EUR-MIN">
+                Fetching Data...
+            </h3>
+
+            <button class="filter-btn" id="EUR_BTN" style="background-color: rgba(240,166,22, 0.5);">EUR (€)</button>
+        </div>
+
+        <div class="info-card" style="background-color: rgba(23, 243, 115, 0.3);">
+            <h1>Currency - Frequency</h1>
+            <h2>CHEAP</h2>
+            <h3 id="CHEAP">
+                Fetching Data...
+            </h3>
+            <h2>EXPENSIVE</h2>
+            <h3 id="EXPENSIVE">
+                Fetching Data...
+            </h3>
+        </div>
+        
+    </div>
+    <div>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

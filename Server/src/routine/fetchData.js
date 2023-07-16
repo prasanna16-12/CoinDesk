@@ -16,7 +16,7 @@ function fetchData() {
                 console.log(error);
             })
     }, 
-        1000 * 10 * 60
+        1000 * 5 * 60
     )
 }
 
