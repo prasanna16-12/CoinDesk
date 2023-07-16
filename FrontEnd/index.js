@@ -189,7 +189,7 @@ function processData(data = []) {
 // getting initial data
 async function getData(from, to) {
 
-    const response = await fetch(`http://localhost:3000/api/coindesk/v1/analytics/data?from=${from}:00&to=${to}:00`,
+    const response = await fetch(`http://coindesk-production.up.railway.app/api/coindesk/v1/analytics/data?from=${from}:00&to=${to}:00`,
         {
             method: 'GET',
         })
@@ -210,7 +210,7 @@ async function getData(from, to) {
         drawChart()
 
     }
-    else{
+    else {
         alert('No data found')
     }
 
