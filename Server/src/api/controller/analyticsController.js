@@ -16,7 +16,7 @@ module.exports = {
 
             for (let index = 0; index < data.length; index++) {
                 let date = new Date(data[index].updated_on)
-                //data[index].updated_on = new Date(date.setHours(date.getHours() + 11))
+                data[index].updated_on = new Date(date.getTime() + (330 * 60000))
             }
 
             let cheapest_to_buy_dict = new Map()
